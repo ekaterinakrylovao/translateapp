@@ -2,7 +2,16 @@
 
 ## Структура проекта: TranslateApp
 
-### 1. Основная директория проекта
+### 1. Используемые технологии
+
+- Spring Boot 2.0 и выше (Spring Web, Spring Data JPA)
+- H2 Database (JDBC)
+- Lombok
+- Maven
+- Yandex Translate API
+- RestTemplate
+
+### 2. Основная директория проекта
 
 ```bash
 translateapp/
@@ -36,7 +45,7 @@ translateapp/
 └── README.md
 ```
  
-### 2. Описание структуры
+### 3. Описание структуры
 
 #### src/main/java/com/example/translateapp/config/
 
@@ -70,7 +79,7 @@ translateapp/
 
 - **TranslateAppApplicationTests.java**: Класс для написания тестов приложения.
 
-### 3. Корневые файлы
+### 4. Корневые файлы
 
 - **.gitignore**: Файл, указывающий, какие файлы и папки не должны попадать в репозиторий Git.
 - **mvnw** и **mvnw.cmd**: Скрипты для запуска Maven без предварительной установки на машине.
@@ -150,3 +159,15 @@ SELECT * FROM TRANSLATIONS;
 
 - Создайте новую коллекцию Create new collection, например, Translator_java
 - Создайте новый реквест Add request. Выберите метод POST. Введите в поле http://localhost:8081/translate. Задайте параметры: text, sourceLang, targetLang. И можете пользоваться.
+
+## Пример использования
+
+### Postman
+
+![Снимок экрана 2024-08-05 010307](https://github.com/user-attachments/assets/eb3f889b-db75-4e16-809f-d5375b3b5468)
+
+![Снимок экрана 2024-08-05 010349](https://github.com/user-attachments/assets/2d510c4f-8fb8-4c31-8c68-d0f1c9c3e6bf)
+
+### H2 Console
+
+![Снимок экрана 2024-08-05 010504](https://github.com/user-attachments/assets/b5fbf0c8-b913-44bd-aa9a-317f5476380b)
