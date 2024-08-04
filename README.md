@@ -1,6 +1,6 @@
 # translateapp
 
-## Структура проекта: TranslateApp
+## Структура проекта TranslateApp
 
 ### 1. Используемые технологии
 
