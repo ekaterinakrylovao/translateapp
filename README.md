@@ -94,6 +94,10 @@ translateapp/
 
 ### 1. Клонируйте репозиторий проекта
 
+```bash
+   git clone https://github.com/ekaterinakrylovao/translateapp.git
+```
+
 ### 2. Получите Yandex Translate API
 
 #### Документация доступна по ссылке [Yandex Translate](https://yandex.cloud/ru/docs/translate/).
@@ -141,7 +145,15 @@ yc iam create-token
 
 ### 3. Запуск и использование приложения
 
-Для запуска проекта используйте команду:
+- Перейдите в директорию проекта:
+```bash
+   cd translateapp
+```
+- Соберите проект с помощью Maven:
+```bash
+   mvn clean install
+```
+- Для запуска проекта используйте команду:
 ```bash
 mvn spring-boot:run
 ```
