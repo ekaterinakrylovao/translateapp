@@ -11,7 +11,7 @@
 - Yandex Translate API
 - RestTemplate
 
-### 2. Основная директория проекта
+### 2. Файловая структура основной директории проекта
 
 ```bash
 translateapp/
@@ -133,7 +133,7 @@ yc config set service-account-key key.json
 ```bash
 yc iam create-token
 ```
-И Вам будет выведен Ваш AIM Token, который надо скопировать и подставить в файл `application.properties` после yandex.translate.api.key=
+И Вам будет выведен Ваш IAM Token, который надо скопировать и подставить в файл `application.properties` после yandex.translate.api.key=
 
 ### 3. Запуск и использование приложения
 
@@ -146,8 +146,8 @@ mvn spring-boot:run
 #### Доступ к базе данных
 
 - Укажите не занятый у вас порт в `application.properties` после server.port= или же оставьте как в коде.
-- Перейдите в своём браузере на http://localhost:8081/h2-console
-- Введите из `application.properties` url в JDBC URL:, логин и пароль.
+- Перейдите в своём браузере на http://localhost:8081/h2-console (если не меняли порт, или же подставьте свой).
+- Введите из `application.properties` url в JDBC URL:, логин и пароль в соответствующие поля.
 - Нажмите Connect.
 - Впишите SQL-запрос:
 ```bash
@@ -157,7 +157,7 @@ SELECT * FROM TRANSLATIONS;
 
 #### Использование приложения с Postman
 
-- Создайте новую коллекцию Create new collection, например, Translator_java
+- Создайте новую коллекцию Create new collection, например, Translator_java.
 - Создайте новый реквест Add request. Выберите метод POST. Введите в поле http://localhost:8081/translate. Задайте параметры: text, sourceLang, targetLang. И можете пользоваться.
 
 ## Пример использования
